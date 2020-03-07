@@ -1,4 +1,4 @@
-from PySide2.QtWidgets import QMainWindow, QApplication, QVBoxLayout, QPushButton, QWidget
+from PySide2.QtWidgets import QMainWindow, QApplication, QVBoxLayout, QWidget
 
 import sys, os
 
