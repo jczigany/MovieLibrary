@@ -3,26 +3,27 @@ import os
 images_folder = os.path.join(os.path.dirname(__file__), "images")
 posters = [os.path.join(images_folder, i) for i in os.listdir(images_folder)]
 
-description = "lkíadlakas al al alaadl  laaÉ  WRII  LK lF  L"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
 
-def create_dummy_data(number = 10):
+def create_dummy_data(number=10):
     import random
-
     movie_list = []
 
     titles = [
         "Shark",
         "Alien",
-        "Terminator",
+        "Parasite",
         "Star Wars",
-        "Star Trek"
+        "Charlie's Angels",
+        "Ad Astra",
     ]
 
     years = [
-        1970,
-        1980,
-        1990,
-        2000
+        "December 4, 2019",
+        "February 26, 2020",
+        "May 30, 2019",
+        "February 5, 2020",
+        "October 2, 2019",
     ]
 
     genres = [
@@ -30,17 +31,17 @@ def create_dummy_data(number = 10):
         "comedy",
         "thriller",
         "horror",
-        "sci-fi"
+        "sci-fi",
     ]
 
     for i in range(number):
         movie_list.append(
             {
-                "Title:" : random.choice(titles),
-                "Year:" : random.choice(years),
-                "genre:" : random.choice(genres),
-                "poster:" : random.choice(posters),
-                "description:" : description
+                "title": random.choice(titles),
+                "release_date": random.choice(years),
+                "genre": random.choice(genres),
+                "poster": random.choice(posters),
+                "description": description
             }
         )
 
